@@ -4,6 +4,11 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
+
+import  { FileTransfer } from '@ionic-native/file-transfer';
+import { File } from '@ionic-native/file';
+import { ImagePicker } from '@ionic-native/image-picker';
+
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 
@@ -24,6 +29,9 @@ import { HomePage } from '../pages/home/home';
   providers: [
     StatusBar,
     SplashScreen,
+    FileTransfer,
+    File,
+    ImagePicker,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
